@@ -1,4 +1,4 @@
-for (let i=0; i<25; i++) {
+for (let i=0; i<256; i++) {
 
 const container = document.querySelector('#container');
      const grid = document.createElement('div');
