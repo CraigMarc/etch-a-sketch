@@ -7,3 +7,15 @@ const container = document.querySelector('#container');
      container.appendChild(grid);
 
 }
+
+const grid = document.querySelectorAll('.grid');
+
+grid.forEach((grid) => {
+
+     grid.addEventListener('mouseover', () => {
+
+          grid.style.backgroundColor = 'red'; 
+ 
+          
+     })
+})
