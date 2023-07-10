@@ -1,4 +1,7 @@
-for (let i=0; i<256; i++) {
+
+function createGrid (screenSize) {
+
+for (let i=0; i<screenSize; i++) {
 
 const container = document.querySelector('#container');
      const grid = document.createElement('div');
@@ -7,6 +10,29 @@ const container = document.querySelector('#container');
      container.appendChild(grid);
 
 }
+}
+/*set up initial screensize*/
+
+createGrid(256)
+
+/*select scrensize*/
+/*
+let rowNumber = 256
+const row = document.querySelectorAll('#rows');
+
+row.forEach((row) => {
+
+     row.addEventListener('click', () => {
+
+rowNumber = row.value * row.value
+ 
+createGrid(rowNumber)
+          
+     })
+})
+console.log(rowNumber)*/
+
+/*draw with mouseover*/
 
 const grid = document.querySelectorAll('.grid');
 
@@ -20,14 +46,4 @@ grid.forEach((grid) => {
      })
 })
 
-const row = document.querySelectorAll('#rows');
 
-row.forEach((row) => {
-
-     row.addEventListener('click', () => {
-
-          let rowNumber = row.value
- console.log(rowNumber)
-          
-     })
-})
