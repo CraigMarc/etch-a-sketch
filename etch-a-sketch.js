@@ -19,3 +19,15 @@ grid.forEach((grid) => {
           
      })
 })
+
+const row = document.querySelectorAll('#rows');
+
+row.forEach((row) => {
+
+     row.addEventListener('click', () => {
+
+          let rowNumber = row.value
+ console.log(rowNumber)
+          
+     })
+})

@@ -13,3 +13,8 @@
     width: 25px;
     height: 30px;
 }
+
+.menuContainer {
+    align-items: left;
+    margin-left: 2%;
+}
