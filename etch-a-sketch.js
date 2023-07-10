@@ -9,8 +9,8 @@ for (let i=0; i<screenSize*screenSize; i++) {
      grid.classList.add('grid');
      
      container.appendChild(grid);
-     grid.style.width = 500/screenSize + 'px'; 
-     grid.style.height = 500/screenSize + 'px';
+     grid.style.width = 450/screenSize + 'px'; 
+     grid.style.height = 450/screenSize + 'px';
 
 }
 }
