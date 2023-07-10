@@ -7,7 +7,7 @@ for (let i=0; i<screenSize; i++) {
      const grid = document.createElement('div');
 
      grid.classList.add('grid');
-    
+     grid.textContent = ('a')
      container.appendChild(grid);
 
 }
