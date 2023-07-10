@@ -2,13 +2,15 @@
 function createGrid (screenSize) {
 
 
-for (let i=0; i<screenSize; i++) {
+for (let i=0; i<screenSize*screenSize; i++) {
      const container = document.querySelector('#container');
      const grid = document.createElement('div');
 
      grid.classList.add('grid');
-     grid.textContent = ('a')
+     
      container.appendChild(grid);
+     grid.style.width = 500/screenSize + 'px'; 
+     grid.style.height = 500/screenSize + 'px';
 
 }
 }
@@ -16,7 +18,7 @@ for (let i=0; i<screenSize; i++) {
 
 /*set up initial screensize*/
 
-createGrid(256)
+createGrid(16)
 draw()
 /*select scrensize*/
 
@@ -30,7 +32,7 @@ row.forEach((row) => {
           boxes.forEach(box => {
             box.remove();
           });
-rowNumber = row.value * row.value
+rowNumber = row.value 
 
 createGrid(rowNumber)
 console.log(rowNumber)  
@@ -47,7 +49,7 @@ grid.forEach((grid) => {
 
      grid.addEventListener('mouseover', () => {
 
-          grid.style.backgroundColor = 'red'; 
+          grid.style.backgroundColor = 'black'; 
  
           
      })
